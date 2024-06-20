@@ -1,0 +1,350 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model Dados2 {
+  index            Int?
+  email            String? @db.VarChar(200)
+  name             String? @db.VarChar(200)
+  firstname        String? @db.VarChar(200)
+  lastname         String? @db.VarChar(200)
+  locality         String? @db.VarChar(200)
+  country          String? @db.VarChar(200)
+  linkedin         String? @db.VarChar(200)
+  companyname      String? @db.VarChar(200)
+  position         String? @db.VarChar(200)
+  company_linkedin String? @db.VarChar(200)
+  site             String? @db.VarChar(200)
+  company_state    String? @db.VarChar(200)
+  company_size     String? @db.VarChar(200)
+  company_industry String? @db.VarChar(200)
+  company_country  String? @db.VarChar(200)
+  company_locality String? @db.VarChar(200)
+  dominio          String? @db.VarChar(200)
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model Dados3 {
+  index            Int?
+  email            String? @db.VarChar(200)
+  name             String? @db.VarChar(200)
+  firstname        String? @db.VarChar(200)
+  lastname         String? @db.VarChar(200)
+  locality         String? @db.VarChar(200)
+  country          String? @db.VarChar(200)
+  linkedin         String? @db.VarChar(200)
+  companyname      String? @db.VarChar(200)
+  position         String? @db.VarChar(200)
+  company_linkedin String? @db.VarChar(200)
+  site             String? @db.VarChar(200)
+  company_state    String? @db.VarChar(200)
+  company_size     String? @db.VarChar(200)
+  company_industry String? @db.VarChar(200)
+  company_country  String? @db.VarChar(200)
+  company_locality String? @db.VarChar(200)
+  dominio          String? @db.VarChar(200)
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model Dados4 {
+  index            Int?
+  email            String? @db.VarChar(300)
+  name             String? @db.VarChar(300)
+  firstname        String? @db.VarChar(300)
+  lastname         String? @db.VarChar(300)
+  locality         String? @db.VarChar(300)
+  country          String? @db.VarChar(300)
+  linkedin         String? @db.VarChar(300)
+  companyname      String? @db.VarChar(300)
+  position         String? @db.VarChar(300)
+  company_linkedin String? @db.VarChar(300)
+  site             String? @db.VarChar(300)
+  company_State    String? @db.VarChar(300)
+  company_city     String? @db.VarChar(300)
+  company_size     String? @db.VarChar(300)
+  company_industry String? @db.VarChar(300)
+  company_country  String? @db.VarChar(300)
+  company_locality String? @db.VarChar(300)
+  dominio          String? @db.VarChar(300)
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model base_gmail {
+  index            String? @db.VarChar
+  email            String? @db.VarChar
+  name             String? @db.VarChar
+  firstName        String? @db.VarChar
+  lastName         String? @db.VarChar
+  locality         String? @db.VarChar
+  industry         String? @db.VarChar
+  country          String? @db.VarChar
+  linkedin         String? @db.VarChar
+  companyName      String? @db.VarChar
+  position         String? @db.VarChar
+  company_linkedin String? @db.VarChar
+  site             String? @db.VarChar
+  company_state    String? @db.VarChar
+  company_city     String? @db.VarChar
+  company_size     String? @db.VarChar
+  company_industry String? @db.VarChar
+  company_country  String? @db.VarChar
+  company_locality String? @db.VarChar
+  dominio          String? @db.VarChar
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model basegeral {
+  index            Decimal @db.Decimal
+  email            String? @db.VarChar
+  name             String? @db.VarChar
+  firstName        String? @db.VarChar
+  lastName         String? @db.VarChar
+  locality         String? @db.VarChar
+  industry         String? @db.VarChar
+  country          String? @db.VarChar
+  linkedin         String? @db.VarChar
+  companyname      String? @db.VarChar
+  position         String? @db.VarChar
+  company_linkedin String? @db.VarChar
+  site             String? @db.VarChar
+  company_state    String? @db.VarChar
+  company_city     String? @db.VarChar
+  company_size     String? @db.VarChar
+  company_industry String? @db.VarChar
+  company_country  String? @db.VarChar
+  company_locality String? @db.VarChar
+  dominio          String? @db.VarChar
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model companies2_empresas {
+  companyname      String? @db.VarChar
+  url              String? @db.VarChar
+  industry         String? @db.VarChar
+  company_linkedin String? @db.VarChar
+  company_locality String? @db.VarChar
+  founded          String? @db.VarChar
+  company_size     String? @db.VarChar
+  hq_phone         String? @db.VarChar
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model completa2 {
+  index            String? @db.VarChar
+  email            String? @db.VarChar
+  name             String? @db.VarChar
+  firstname        String? @db.VarChar
+  lastname         String? @db.VarChar
+  locality         String? @db.VarChar
+  industry         String? @db.VarChar
+  country          String? @db.VarChar
+  linkedin         String? @db.VarChar
+  companyname      String? @db.VarChar
+  position         String? @db.VarChar
+  company_linkedin String? @db.VarChar
+  site             String? @db.VarChar
+  company_state    String? @db.VarChar
+  company_city     String? @db.VarChar
+  company_size     String? @db.VarChar
+  company_industry String? @db.VarChar
+  company_country  String? @db.VarChar
+  company_locality String? @db.VarChar
+  dominio          String? @db.VarChar
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model dominios {
+  email   String? @db.VarChar
+  dominio String? @db.VarChar
+
+  @@ignore
+}
+
+model logs {
+  log_id        Int       @id @default(autoincrement())
+  log_timestamp DateTime? @default(now()) @db.Timestamp(6)
+  message       String?
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model tb_dadocompletos {
+  index            String? @db.VarChar
+  email            String? @db.VarChar
+  name             String? @db.VarChar
+  firstname        String? @db.VarChar
+  lastname         String? @db.VarChar
+  locality         String? @db.VarChar
+  industry         String? @db.VarChar
+  country          String? @db.VarChar
+  linkedin         String? @db.VarChar
+  companyname      String? @db.VarChar
+  position         String? @db.VarChar
+  company_linkedin String? @db.VarChar
+  site             String? @db.VarChar
+  company_state    String? @db.VarChar
+  company_city     String? @db.VarChar
+  company_size     String? @db.VarChar
+  company_industry String? @db.VarChar
+  company_country  String? @db.VarChar
+  dominio          String? @db.VarChar
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model tb_emp {
+  companyname      String? @db.VarChar
+  site             String? @db.VarChar
+  company_industry String? @db.VarChar
+  company_linkedin String? @db.VarChar
+  company_locality String? @db.VarChar
+  Founded          String? @db.VarChar
+  company_size     String? @db.VarChar
+  HQ_Phone         String? @db.VarChar
+
+  @@ignore
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model tb_enriquecer {
+  index            String? @db.VarChar
+  email            String? @db.VarChar
+  name             String? @db.VarChar
+  firstname        String? @db.VarChar
+  lastname         String? @db.VarChar
+  locality         String? @db.VarChar
+  industry         String? @db.VarChar
+  country          String? @db.VarChar
+  linkedin         String? @db.VarChar
+  companyname      String? @db.VarChar
+  position         String? @db.VarChar
+  company_linkedin String? @db.VarChar
+  site             String? @db.VarChar
+  company_state    String? @db.VarChar
+  company_city     String? @db.VarChar
+  company_size     String? @db.VarChar
+  company_industry String? @db.VarChar
+  company_country  String? @db.VarChar
+  company_locality String? @db.VarChar
+  dominio          String? @db.VarChar
+
+  @@ignore
+}
+
+model BigProspect {
+  id       Int  @id @default(autoincrement())
+  prospect Json
+}
+
+model BigQueryAtiva {
+  id               String  @id @db.VarChar(200)
+  email            String? @db.VarChar(200)
+  name             String? @db.VarChar(200)
+  firstname        String? @db.VarChar(200)
+  lastname         String? @db.VarChar(200)
+  locality         String? @db.VarChar(200)
+  country          String? @db.VarChar(200)
+  linkedin         String? @db.VarChar(200)
+  companyname      String? @db.VarChar(200)
+  position         String? @db.VarChar(200)
+  company_linkedin String? @db.VarChar(200)
+  site             String? @db.VarChar(200)
+  company_state    String? @db.VarChar(200)
+  company_size     String? @db.VarChar(200)
+  company_industry String? @db.VarChar(200)
+  company_country  String? @db.VarChar(200)
+  company_locality String? @db.VarChar(200)
+  dominio          String? @db.VarChar(200)
+}
+
+model tb_teste {
+  id               Int     @id
+  email            String? @db.VarChar(200)
+  name             String? @db.VarChar(200)
+  firstname        String? @db.VarChar(200)
+  lastname         String? @db.VarChar(200)
+  locality         String? @db.VarChar(200)
+  country          String? @db.VarChar(200)
+  linkedin         String? @db.VarChar(200)
+  companyname      String? @db.VarChar(200)
+  position         String? @db.VarChar(200)
+  company_linkedin String? @db.VarChar(200)
+  site             String? @db.VarChar(200)
+  company_state    String? @db.VarChar(200)
+  company_size     String? @db.VarChar(200)
+  company_industry String? @db.VarChar(200)
+  company_country  String? @db.VarChar(200)
+  company_locality String? @db.VarChar(200)
+  dominio          String? @db.VarChar(200)
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String   @db.VarChar(255)
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  content   String?
+  published Boolean  @default(false)
+  authorId  Int
+  User      User     @relation(fields: [authorId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Profile {
+  id     Int     @id @default(autoincrement())
+  bio    String?
+  userId Int     @unique
+  User   User    @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model User {
+  id      Int      @id @default(autoincrement())
+  name    String?  @db.VarChar(255)
+  email   String   @unique @db.VarChar(255)
+  Post    Post[]
+  Profile Profile?
+}
+
+model LucaBases {
+  id                      BigInt  @id @default(autoincrement())
+  E_mail                  String? @map("E-mail")
+  Status_Do_Email         String? @map("Status Do Email")
+  Nome                    String?
+  Sobrenome               String?
+  Nome_Completo           String? @map("Nome Completo")
+  Usu_rio___redes_sociais String? @map("Usuário - redes sociais")
+  linkedin                String?
+  Cargo                   String?
+  Pa_s                    String? @map("País")
+  Localiza__o             String? @map("Localização")
+  Setor                   String?
+  Adicionar_data          String? @map("Adicionar data")
+  Nome_da_empresa         String? @map("Nome da empresa")
+  URL_da_empresa          String? @map("URL da empresa")
+  Empresa___redes_sociais String? @map("Empresa - redes sociais")
+  Tamanho                 String?
+  Pa_s_da_empresa         String? @map("País da empresa")
+  Localiza__o_da_empresa  String? @map("Localização da empresa")
+  Estado                  String?
+  Cidade                  String?
+  Setor_da_empresa        String? @map("Setor da empresa")
+  Telefone_da_sede        String? @map("Telefone da sede")
+}
